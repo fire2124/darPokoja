@@ -34,12 +34,12 @@ const RightNav = ({ open }) => {
       xl:justify-center xl:text-center
       lg:justify-center lg:text-center"
     >
-       <a href="#AboutUsSection" className="hover:underline text-blue xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">O Nás</a>
-      <a href="#Galery" className="hover:underline text-blue xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2"> Galéria</a>
-      <a href="#Documents" className="hover:underline text-blue xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">Dokumenty</a>
-      <a href="#Projects" className="hover:underline text-blue xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">Projekty</a>
-      <a href="#Pricing" className="hover:underline text-blue xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">Cenník</a>
-      <a href="#Connections" className="hover:underline text-blue xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">Kontakty</a>
+       <a href="#AboutUsSection" className="hover:underline navbarText xl:text-xl lg:text-lg md:text-base sm:text-base text-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">O Nás</a>
+      <a href="#Galery" className="hover:underline navbarText xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2"> Galéria</a>
+      <a href="#Documents" className="hover:underline navbarText xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">Dokumenty</a>
+      <a href="#Projects" className="hover:underline navbarText xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">Projekty</a>
+      <a href="#Pricing" className="hover:underline navbarText xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">Cenník</a>
+      <a href="#Connections" className="hover:underline navbarText xl:text-xl lg:text-lg md:text-base sm:text-base text-center justify-center xl:py-2 xl:px-12 xl:py-2 xl:px-10 lg:py-2 lg:px-10 lg:py-2 lg:px-10 lg:mt-2">Kontakty</a>
 
     </Ul>
   );

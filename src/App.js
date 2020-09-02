@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import Landing from "./pages/Landing";
 import firebase from "firebase";
 import NavBar from "./components/Nav/Navbar";
-import AllPages from "./components/Pdf/all-pages";
 import Footer from "./components/footer";
 import "./App.css";
 import "./assets/add.css";

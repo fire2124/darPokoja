@@ -18,29 +18,27 @@
   display: flex;
 }
 
-.row            { 
-  -webkit-flex-direction: row; 
+.row {
+  -webkit-flex-direction: row;
   flex-direction: row;
 }
 
-.row-reverse    { 
-  -webkit-flex-direction: row-reverse; 
+.row-reverse {
+  -webkit-flex-direction: row-reverse;
   flex-direction: row-reverse;
-}  
+}
 
-.column { 
-  -webkit-flex-direction: column; 
-  flex-direction: column; 
+.column {
+  -webkit-flex-direction: column;
+  flex-direction: column;
   float: left;
 }
 
-.column-reverse { 
-  -webkit-flex-direction: column-reverse; 
-  flex-direction: column-reverse; 
+.column-reverse {
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   float: right;
 }
-
-
 
 .reverse {
   display: flex;
@@ -52,93 +50,68 @@
   /* identical to box height, or 22px */
   font-variant: small-caps;
 }
-.text-bold{
+.text-bold {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 184%;
 }
-.textName{
+.textName {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
   line-height: 126.85%;
 }
-
-.textArticle{
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 159.35%;
+.textFooter {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 182.35%;
 }
 
-.picture-Carusel{
+.textArticle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 159.35%;
+}
+
+.picture-Carusel {
   border-radius: 25px 25px 25px 25px;
 }
-.react-multiple-carousel__arrow::before{
-  color: #019ADF;
-  z-index: 1;
 
+.react-multiple-carousel__arrow::before {
+  color: #019adf;
+  z-index: 1;
 }
-.react-multiple-carousel__arrow{
-  background:#FFFFFF;
+.react-multiple-carousel__arrow {
+  background: #ffffff;
   font-weight: 100px;
   z-index: 1;
-
 }
- 
-.aboutUsContainer{
-  background-color: #FFFFFF;
+
+.aboutUsContainer {
+  background-color: #ffffff;
   position: absolute;
   left: 900px;
   border-radius: 15px 0px 0px 15px;
   z-index: 10;
 }
-.aboutUsPic{
+.aboutUsPic {
   position: relative;
-  z-index: 2  ;
+  z-index: 2;
 }
-
-.documentsContainer{
-
-}
-
-.docPic{
+.docPic {
   position: relative;
-  z-index: 2  ;
-}
-
-.Navbar {
-  width: 72px;
-  font-style: normal;
-  font-weight: 500;
-  /* identical to box height, or 22px */
-  font-variant: small-caps;
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  align-self: center;
-  margin: 10px 0px;
-}
-.Footer {
-  width: 72px;
-  font-style: normal;
-  font-weight: 500;
-  /* identical to box height, or 22px */
-  font-variant: small-caps;
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  align-self: center;
-  margin: 10px 0px;
+  z-index: 2;
 }
 
 .backgroundFooter {
   background-image: url("../images/DarPokoja/backgrounds/footer.png");
   width: 100%;
   width: 100%;
-  padding-left:0rem;
-  padding-right:0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 .backgroundUp {
@@ -172,18 +145,22 @@ line-height: 159.35%;
   background-position: right;
 }
 
+.navbarText {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.19%;
+  /* identical to box height, or 22px */
 
+  font-variant: small-caps;
 
-
-
+  color: #019adf;
+}
 @media (min-width: 320px) {
   .backgroundUp {
     width: 100%;
     background-image: url("../images/DarPokoja/backgrounds/mobil1.png");
     background-position: absolute;
   }
-
-
   /*Mapa*/
   .container {
     position: relative;
@@ -191,8 +168,8 @@ line-height: 159.35%;
     width: 100%;
     height: 100%;
   }
-  .containerMap{
-    padding-top: 80% /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625)*/ ;
+  .containerMap {
+    padding-top: 80% /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625)*/;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -207,16 +184,14 @@ line-height: 159.35%;
     right: 0;
     width: 100%;
   }
-  .documentsContainer{
+  .documentsContainer {
     width: auto;
     position: relative;
-
   }
-  .aboutUsContainer{
+  .aboutUsContainer {
     width: auto;
     position: relative;
     left: 0px;
-
   }
 }
 
@@ -236,28 +211,49 @@ line-height: 159.35%;
     bottom: 0;
     right: 0;
     width: 80%;
-    height: 100%;
+    height: 80%;
   }
-  .aboutUsContainer{
-    background-color: #FFFFFF;
+  .aboutUsContainer {
+    background-color: #ffffff;
     position: relative;
-    left:0px;
-    height: 350px;
+    left: 0px;
+    height: auto;
     border-radius: 15px 0px 0px 15px;
     z-index: 10;
   }
-  .documentsContainer{
-    background-color: #FFFFFF;
-    position: absolute;
+  .documentsContainer {
+    background-color: #ffffff;
+    position: relative;
     /* left: 1900px; */
-    height: 400px;
+    height: auto;
     width: auto;
     border-radius: 0px 15px 15px 0px;
     z-index: 10;
   }
 }
 
+@media (min-width: 780px) {
+
+
+}
+
+
 @media (min-width: 1024px) {
+  .backgroundUp {
+    background-image: url("../images/DarPokoja/backgrounds/web1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+  }
+
+  .imgUp {
+    width: 478.5px;
+    height: 444.65px;
+    left: 776px;
+    top: 179px;
+
+  }
   /*Mapa*/
   .container {
     position: relative;
@@ -275,33 +271,71 @@ line-height: 159.35%;
     width: 80%;
     height: 100%;
   }
-  .aboutUsContainer{
-    background-color: #FFFFFF;
+  .aboutUsContainer {
+    background-color: #ffffff;
     position: absolute;
-    left: 900px;
-    height: 350px;
+    margin-top: 4%;
+    left: 50%;
+    height: 300px;
     border-radius: 15px 0px 0px 15px;
     z-index: 10;
   }
-  .documentsContainer{
-    background-color: #FFFFFF;
+  .backgroundUPSecond{
+    height: 100%;
+    background-image: url("../images/DarPokoja/backgrounds/background-up-2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .backgroundDoc{
+    height: 100%;
+    background-image: url("../images/DarPokoja/backgrounds/web2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .container{
+    padding-top:0%;
+  }
+
+  .documentsContainer {
+    background-color: #ffffff;
     position: absolute;
-    /* left: 1900px; */
-    height: 400px;
-    width: 1000px;
+    margin-top: 8%;
+    padding: 4%;
+    padding-left: 8%;
+    padding-right: 5%;
+
+    left: 0%;
+    width: 60%;
     border-radius: 0px 15px 15px 0px;
     z-index: 10;
+  }
+  .pic{
+    margin-top: 8%;
+    left: 50%;
+    width: 70%;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: 0%;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: row;
+  }
+  .reverseR {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
 @media (min-width: 1280px) {
-
   /*Mapa*/
   .container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 20.25% /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 20.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
   /* Then style the iframe to fit in the container div with full height and width */
   .responsive-iframe {
@@ -313,23 +347,23 @@ line-height: 159.35%;
     width: 80%;
     height: 100%;
   }
-  .aboutUsContainer{
-  background-color: #FFFFFF;
-  position: absolute;
-  left: 900px;
-  height: 350px;
-  border-radius: 15px 0px 0px 15px;
-  z-index: 10;
-}
-.documentsContainer{
-  background-color: #FFFFFF;
-  position: absolute;
-  /* left: 1900px; */
-  height: 400px;
-  width: 1000px;
-  border-radius: 0px 15px 15px 0px;
-  z-index: 10;
-}
+  .aboutUsContainer {
+    background-color: #ffffff;
+    position: absolute;
+    left: 900px;
+    height: 350px;
+    border-radius: 15px 0px 0px 15px;
+    z-index: 10;
+  }
+  .documentsContainer {
+    background-color: #ffffff;
+    position: absolute;
+    /* left: 1900px; */
+    height: 400px;
+    width: 1000px;
+    border-radius: 0px 15px 15px 0px;
+    z-index: 10;
+  }
 }
 @media (min-width: 1920px) {
   /*Mapa*/
@@ -337,8 +371,8 @@ line-height: 159.35%;
     position: static;
     overflow: hidden;
     width: 100%;
-    padding-top: 5% ;
-   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 5%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
   /* Then style the iframe to fit in the container div with full height and width */
   .responsive-iframe {
@@ -350,8 +384,8 @@ line-height: 159.35%;
     width: 90%;
     height: 400px;
   }
-  .documentsContainer{
-    background-color: #FFFFFF;
+  .documentsContainer {
+    background-color: #ffffff;
     position: absolute;
     /* left: 1900px; */
     height: 400px;
@@ -363,12 +397,9 @@ line-height: 159.35%;
   .react-multiple-carousel__arrow--left {
     margin-left: 8rem;
     z-index: 1;
-  } 
+  }
   .react-multiple-carousel__arrow--right {
     margin-right: 8rem;
     z-index: 1;
-
-  } 
-
-  
+  }
 }

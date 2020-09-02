@@ -7,7 +7,6 @@ import psk from "../images/DarPokoja/svk-bocna verzia 1.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import image from "../images/DarPokoja/DSCF1331z 1.png";
-import MyApp from "./../components/Pdf/all-pages";
 
 const responsive = {
   superLargeDesktop: {
@@ -41,13 +40,13 @@ class Landing extends Component {
   render() {
     return (
       <div className="">
-        <div className="backgroundUp reverse ">
-          <div className="w-full p-5">
-            <h1 className="blue text-2xl font-bold textName">
+        <div className="backgroundUp reverse lg:flex lg:flex-wrap lg:flex">
+          <div className="w-full p-5 lg:w-1/2 lg:self-center lg:justify-center">
+            <h1 className="blue text-2xl font-bold textName lg:ml-20 lg:mr-10">
               V Domove pre seniorov ponúkame individuálny prístup k potrebám
               klientov
             </h1>
-            <p className="mt-5 textArticle">
+            <p className="mt-5 textArticle lg:w-1/2 lg:ml-20">
               Plynulé poskytovanie sociálnych služieb zabezpečuje obetavý a
               zároveň odborný personál v zložení: riaditeľ a ekonóm, odborný
               garant, sociálny pracovník, vedúca sociálno-zdravotníckeho úseku,
@@ -55,29 +54,29 @@ class Landing extends Component {
               pracujúci na dohodu.
             </p>
           </div>
-          <div className="mt-16 w-full p-5">
+          <div className="mt-16 w-full p-5 lg:w-1/2 lg:self-center imgUp">
             <img
               src={ilustracia}
               alt="Logo"
               className="mx-auto md:w-auto"
-              width="478.5px"
+              width="auto"
             />
           </div>
         </div>
 
-        <div className="">
-          <div className=" ">
-            <img src={ilustracia2} alt="Logo" />
+        <div className="lg:flex lg:flex-no-wrap backgroundUPSecond">
+          <div className="lg:w-10/12 ">
+            <img src={ilustracia2} alt="Logo" className="mx-auto md:w-auto" />
           </div>
-          <div className="w-full p-5">
-            <div className="aboutUsContainer">
+          <div className="w-full p-5 lg:w-2/12 ">
+            <div className="aboutUsContainer lg:p-12">
               <h1
                 id="AboutUsSection"
-                className="blue text-2xl font-bold textName"
+                className="blue text-2xl font-bold textName "
               >
                 O nás
               </h1>
-              <p className="mt-5 textArticle">
+              <p className="mt-5 textArticle  ">
                 Nezisková organizácia Dar pokoja n. o. od roku 2013 poskytuje
                 sociálne služby v súlade so Zákonom NR SR č. 448/2008 Z. z. o
                 sociálnych službách v zariadeniach sociálnych služieb, ktoré sú
@@ -90,55 +89,60 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-        <div className="backgroundClients p-5">
-          <div className="">
-            <div className="w-full">
-              <h1 className="blue text-2xl font-bold textName mt-5">
-                Klientom ponúkame
-              </h1>
-              <div className="p-5">
-                <li className="text-left blue text-bold">
-                  ubytovanie v jednoposteľových izbách
-                </li>
-                <li className="text-left blue text-bold">
-                  celodennú stravu, 5x denne
-                </li>
-                <li className="text-left blue text-bold">
-                  základnú opateru a starostlivosť
-                </li>
-                <li className="text-left blue text-bold">
-                  ošetrovateľskú starostlivosť
-                </li>
-                <li className="text-left blue text-bold">
-                  sociálne poradenstvo a sociálnu rehabilitáciu
-                </li>
-                <li className="text-left blue text-bold">
-                  pracovnú terapiu a záujmovú činnosť
-                </li>
-                <li className="text-left blue text-bold">nepretržitý dohľad</li>
+        <div className="backgroundClients p-5 lg:flex lg:flex-wrap lg:flex">
+          <h1 className="blue text-2xl font-bold textName mt-10 lg:ml-10">
+            Klientom ponúkame
+          </h1>
+          <div className="backgroundClients  lg:flex lg:flex-wrap lg:flex reverseR">
+            <div className=" lg:w-1/2 lg:self-center lg:justify-center">
+              <div className="w-full lg:p-10 ">
+                <div className="p-2 lg:p-0">
+                  <li className="text-left blue text-bold lg:-mt-8">
+                    ubytovanie v jednoposteľových izbách
+                  </li>
+                  <li className="text-left blue text-bold">
+                    celodennú stravu, 5x denne
+                  </li>
+                  <li className="text-left blue text-bold">
+                    základnú opateru a starostlivosť
+                  </li>
+                  <li className="text-left blue text-bold">
+                    ošetrovateľskú starostlivosť
+                  </li>
+                  <li className="text-left blue text-bold">
+                    sociálne poradenstvo a sociálnu rehabilitáciu
+                  </li>
+                  <li className="text-left blue text-bold">
+                    pracovnú terapiu a záujmovú činnosť
+                  </li>
+                  <li className="text-left blue text-bold">
+                    nepretržitý dohľad
+                  </li>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="">
-            <p className="textArticle  mb-5">
-              Ubytovanie prijímateľov sociálnej služby je zabezpečené v
-              jednoposteľových izbách, ktoré sú situované v bunkách. Hygienické
-              príslušenstvo, WC a sprchovací kút má každá obytná bunka
-              samostatné. Stravovanie zahŕňa výživnú a racionálnu stravu.
-              Raňajky, desiata a olovrant sa pripravujú priamo v zariadení
-              sociálnych služieb. Obedy a večere sú zabezpečené dodávateľským
-              spôsobom. Upratovanie, pranie, žehlenie a údržbu bielizne a
-              šatstva zabezpečuje opatrovateľský úsek v priestoroch zariadenia.
-            </p>
+            <div className=" lg:w-1/2 lg:self-center lg:justify-center">
+              <p className="textArticle mb-5 lg:p-10">
+                Ubytovanie prijímateľov sociálnej služby je zabezpečené v
+                jednoposteľových izbách, ktoré sú situované v bunkách.
+                Hygienické príslušenstvo, WC a sprchovací kút má každá obytná
+                bunka samostatné. Stravovanie zahŕňa výživnú a racionálnu
+                stravu. Raňajky, desiata a olovrant sa pripravujú priamo v
+                zariadení sociálnych služieb. Obedy a večere sú zabezpečené
+                dodávateľským spôsobom. Upratovanie, pranie, žehlenie a údržbu
+                bielizne a šatstva zabezpečuje opatrovateľský úsek v priestoroch
+                zariadenia.
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="">
           <div className="p-5">
-            <div id="Galery" className="blue text-2xl font-bold textName">
+            <div id="Galery" className="blue text-2xl font-bold textName lg:text-center lg:p-5 lg:mt-5">
               Galéria
             </div>
-            <div className="picture-Carusel mt-5">
+            <div className="picture-Carusel mt-5 lg:mt-6">
               <Carousel
                 className=""
                 swipeable={false}
@@ -184,9 +188,9 @@ class Landing extends Component {
           </div>
         </div>
 
-        <div className="">
-          <div className="">
-            <div className="documentsContainer">
+        <div className="backgroundDoc mt-20">
+          <div className="lg:flex lg:flex-wrap lg:flex reverseR">
+            <div className="documentsContainer lg:w-1/2 lg:self-center lg:justify-center">
               <div className="p-5">
                 <h1 id="Documents" className="blue text-2xl font-bold textName">
                   Dokumenty
@@ -214,13 +218,13 @@ class Landing extends Component {
               </div>
             </div>
 
-            <div className="sm:p-5">
+            <div className="sm:p-5 lg:w-1/2 lg:self-center lg:justify-center pic">
               <img src={ilustracia3} alt="Logo" />
             </div>
           </div>
 
           <div className="backgroundZmluvy reverse">
-            <div className="mt-8 p-5">
+            <div className="p-5">
               <div className="">
                 <h1 id="Projects" className="blue text-2xl font-bold textName">
                   Projekty
@@ -256,7 +260,9 @@ class Landing extends Component {
             </div>
             <div className="mt-5 p-5">
               <div className="">
-                <h1 className="blue text-2xl font-bold textName">Zmluvy</h1>
+                <h1 id="Contracts" className="blue text-2xl font-bold textName">
+                  Zmluvy
+                </h1>
                 <div className="blue underline mt-5">
                   <a href="http://darpokoja.sk/public/Stravn%C3%A9%20l%C3%ADstky-Up%20Slovensko,%20s.r.o.pdf">
                     I. Stravné lístky-Up Slovensko, s.r.o

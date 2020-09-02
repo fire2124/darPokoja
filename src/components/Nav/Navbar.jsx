@@ -17,13 +17,13 @@ const Nav = styled.nav`
 
 const Navbar2 = () => {
   return (
-    <Nav className="xl:my-4">
+    <Nav className="xl:my-4 ">
       <a href="/" >
         <img
           src={ilustracia}
           alt="Logo"
           width="200px"
-          className=" xl:ml-2 "
+          className=" xl:ml-2 lg:my-2"
         />
       </a>
       <Burger/>
