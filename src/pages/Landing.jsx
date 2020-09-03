@@ -1,46 +1,16 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import ilustracia from "../images/DarPokoja/ilustracia_velka.png";
 import ilustracia2 from "../images/DarPokoja/DSCF1331z 1.png";
 import ilustracia3 from "../images/DarPokoja/DSCF1384z.png";
 import psk from "../images/DarPokoja/svk-bocna verzia 1.png";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import image from "../images/DarPokoja/DSCF1331z 1.png";
+import CarouselForm from "../components/Carousel/CarouselForm"
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
-const CustomRightArrow = ({ onClick, ...rest }) => {
-  const {
-    onMove,
-    carouselState: { currentSlide, deviceType },
-  } = rest;
-  // onMove means if dragging or swiping in progress.
-  return <button onClick={() => onClick()} />;
-};
 
 class Landing extends Component {
   render() {
     return (
       <div className="">
-        <div className="backgroundUp reverse lg:flex lg:flex-wrap lg:flex">
+        <div className="backgroundUp reverse lg:flex lg:flex-wrap">
           <div className="w-full p-5 lg:w-1/2 lg:self-center lg:justify-center">
             <h1 className="blue text-2xl font-bold textName lg:ml-20 lg:mr-10">
               V Domove pre seniorov ponúkame individuálny prístup k potrebám
@@ -89,11 +59,11 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-        <div className="backgroundClients p-5 lg:flex lg:flex-wrap lg:flex">
+        <div className="backgroundClients p-5 lg:flex lg:flex-wrap ">
           <h1 className="blue text-2xl font-bold textName mt-10 lg:ml-10">
             Klientom ponúkame
           </h1>
-          <div className="backgroundClients  lg:flex lg:flex-wrap lg:flex reverseR">
+          <div className="backgroundClients  lg:flex lg:flex-wrap reverseR">
             <div className=" lg:w-1/2 lg:self-center lg:justify-center">
               <div className="w-full lg:p-10 ">
                 <div className="p-2 lg:p-0">
@@ -142,54 +112,14 @@ class Landing extends Component {
             <div id="Galery" className="blue text-2xl font-bold textName lg:text-center lg:p-5 lg:mt-5">
               Galéria
             </div>
-            <div className="picture-Carusel mt-5 lg:mt-6">
-              <Carousel
-                className=""
-                swipeable={false}
-                responsive={responsive}
-                centerMode={false}
-                autoPlay
-                autoPlaySpeed={3000}
-                additionalTransfrom={0}
-                arrows
-                containerClass="container"
-                draggable
-                focusOnSelect={true}
-                infinite
-                minimumTouchDrag={80}
-                slidesToSlide={1}
-              >
-                <div className="picture-Carusel">
-                  <img src={image} alt="image1" />
-                </div>
-                <div className="picture-Carusel">
-                  <img src={ilustracia3} alt="image2"></img>
-                </div>
-                <div className="picture-Carusel">
-                  <img src={image} alt="image3"></img>
-                </div>
-                <div className="picture-Carusel">
-                  <img src={ilustracia3} alt="image4"></img>
-                </div>
-                <div className="picture-Carusel">
-                  <img src={image} alt="image5"></img>
-                </div>
-                <div className="picture-Carusel">
-                  <img src={ilustracia3} alt="image6"></img>
-                </div>
-                <div className="picture-Carusel">
-                  <img src={image} alt="image7"></img>
-                </div>
-                <div className="picture-Carusel">
-                  <img src={ilustracia3} alt="image8"></img>
-                </div>
-              </Carousel>
+            <div className="mt-5 lg:mt-6">
+              <CarouselForm/>
             </div>
           </div>
         </div>
 
-        <div className="backgroundDoc mt-20">
-          <div className="lg:flex lg:flex-wrap lg:flex reverseR">
+        <div className="backgroundDoc lg:mt-20">
+          <div className="lg:flex lg:flex-wrap reverseR">
             <div className="documentsContainer lg:w-1/2 lg:self-center lg:justify-center">
               <div className="p-5">
                 <h1 id="Documents" className="blue text-2xl font-bold textName">
@@ -223,8 +153,8 @@ class Landing extends Component {
             </div>
           </div>
 
-          <div className="backgroundZmluvy reverse">
-            <div className="p-5">
+          <div className="backgroundZmluvy reverse lg:flex lg:flex-wrap ">
+            <div className="p-5 lg:w-1/2 lg:self-center lg:justify-center lg:p-20">
               <div className="">
                 <h1 id="Projects" className="blue text-2xl font-bold textName">
                   Projekty
@@ -258,7 +188,7 @@ class Landing extends Component {
                 </div>
               </div>
             </div>
-            <div className="mt-5 p-5">
+            <div className="mt-5 p-5 lg:w-1/2 lg:self-center lg:justify-center lg:p-20">
               <div className="">
                 <h1 id="Contracts" className="blue text-2xl font-bold textName">
                   Zmluvy
@@ -302,7 +232,7 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-        <div className="p-5 mt-5">
+        <div className="p-5 mt-5 lg:p-16 lg:ml-10">
           <h1 id="Connections" className="blue text-2xl font-bold textName">
             Kontakty
           </h1>
@@ -315,12 +245,14 @@ class Landing extends Component {
                 tabindex="0"
               ></iframe>
             </div>
-            <div className=" ">
+            <div className="lg:p-10  ">
               <p className="xl:text-lg font-bold text-black text-left ">
                 Dar pokoja n.o., Domov pre seniorov
               </p>
               <p className="xl:text-lg text-black text-left">
-                Chminianska Nová Ves 339, 082 33
+                Chminianska Nová Ves 339,
+                <br/>
+                082 33
               </p>
               <p className="mt-5">
                 <div className="font-semibold">Telefón:</div>

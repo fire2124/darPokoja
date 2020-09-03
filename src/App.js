@@ -6,6 +6,7 @@ import NavBar from "./components/Nav/Navbar";
 import Footer from "./components/footer";
 import "./App.css";
 import "./assets/add.css";
+import "./assets/main.css"
 
 
 var firebaseConfig = {

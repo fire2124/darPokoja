@@ -1,6 +1,9 @@
 .blue {
   color: #019adf;
 }
+.darkBlue {
+  color: #004f9f;
+}
 .xl\:ml-70 {
   margin-left: 20rem;
 }
@@ -43,6 +46,10 @@
 .reverse {
   display: flex;
   flex-direction: column-reverse;
+}
+.normal {
+  display: flex;
+  flex-direction: column;
 }
 
 .text {
@@ -196,6 +203,12 @@
 }
 
 @media (min-width: 640px) {
+  .textFooter {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 182.35%;
+  }
   /*Mapa*/
   .container {
     position: relative;
@@ -233,12 +246,43 @@
 }
 
 @media (min-width: 780px) {
-
-
+ 
 }
 
-
 @media (min-width: 1024px) {
+  .text-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 184%;
+  }
+  .textName {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 126.85%;
+  }
+  .textArticle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 159.35%;
+  }
+  .Gap {
+    margin-right: 0%;
+    gap: 0px 0%;
+  }
+  .Gap2 {
+    margin-left: 2%;
+    gap: 0px 50%;
+  }
+
+  .textFooter {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 182.35%;
+  }
   .backgroundUp {
     background-image: url("../images/DarPokoja/backgrounds/web1.png");
     background-size: 100% 100%;
@@ -252,7 +296,6 @@
     height: 444.65px;
     left: 776px;
     top: 179px;
-
   }
   /*Mapa*/
   .container {
@@ -261,15 +304,20 @@
     width: 100%;
     padding-top: 20.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
+
+  .containerMap {
+    padding-top: 2% /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625)*/;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    height: 120%;
+  }
+
   /* Then style the iframe to fit in the container div with full height and width */
   .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    height: 100%;
+    position: relative;
+    width: 576px;
+    height: 293px;
   }
   .aboutUsContainer {
     background-color: #ffffff;
@@ -280,22 +328,22 @@
     border-radius: 15px 0px 0px 15px;
     z-index: 10;
   }
-  .backgroundUPSecond{
+  .backgroundUPSecond {
     height: 100%;
     background-image: url("../images/DarPokoja/backgrounds/background-up-2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: right;
   }
-  .backgroundDoc{
+  .backgroundDoc {
     height: 100%;
     background-image: url("../images/DarPokoja/backgrounds/web2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: right;
   }
-  .container{
-    padding-top:0%;
+  .container {
+    padding-top: 0%;
   }
 
   .documentsContainer {
@@ -311,7 +359,7 @@
     border-radius: 0px 15px 15px 0px;
     z-index: 10;
   }
-  .pic{
+  .pic {
     margin-top: 8%;
     left: 50%;
     width: 70%;
@@ -327,9 +375,39 @@
     display: flex;
     flex-direction: row-reverse;
   }
+  .normal {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1280px) {
+  .text-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 184%;
+  }
+  .textName {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 126.85%;
+  }
+  .textArticle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 159.35%;
+  }
+  .Gap {
+    margin-right: 10%;
+    gap: 0px 60px;
+  }
+  .Gap2 {
+    margin-left: 10%;
+    gap: 0px 160px;
+  }
   /*Mapa*/
   .container {
     position: relative;
