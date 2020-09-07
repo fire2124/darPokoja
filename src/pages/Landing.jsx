@@ -9,10 +9,10 @@ import CarouselForm from "../components/Carousel/CarouselForm"
 class Landing extends Component {
   render() {
     return (
-      <div className="">
+      <div className="allWidth">
         <div className="backgroundUp reverse lg:flex lg:flex-wrap">
-          <div className="w-full p-5 lg:w-1/2 lg:self-center lg:justify-center">
-            <h1 className="blue text-2xl font-bold textName lg:ml-20 lg:mr-10">
+          <div className="w-full p-5 lg:w-1/2 lg:self-center lg:justify-center ">
+            <h1 className="blue text-2xl font-bold textName lg:ml-20 lg:mr-10 ">
               V Domove pre seniorov ponúkame individuálny prístup k potrebám
               klientov
             </h1>
@@ -36,17 +36,17 @@ class Landing extends Component {
 
         <div className="lg:flex lg:flex-no-wrap backgroundUPSecond">
           <div className="lg:w-10/12 ">
-            <img src={ilustracia2} alt="Logo" className="mx-auto md:w-auto" />
+            <img src={ilustracia2} alt="Logo" className="mx-auto md:mx-auto" />
           </div>
-          <div className="w-full p-5 lg:w-2/12 ">
-            <div className="aboutUsContainer lg:p-12">
+          <div className="w-full mb:p-5 lg:p-0 lg:w-2/12 ">
+            <div className="aboutUsContainer lg:p-10">
               <h1
                 id="AboutUsSection"
                 className="blue text-2xl font-bold textName "
               >
                 O nás
               </h1>
-              <p className="mt-5 textArticle  ">
+              <p className="mt-5 textArticle lg:mr-16 ">
                 Nezisková organizácia Dar pokoja n. o. od roku 2013 poskytuje
                 sociálne služby v súlade so Zákonom NR SR č. 448/2008 Z. z. o
                 sociálnych službách v zariadeniach sociálnych služieb, ktoré sú
@@ -59,7 +59,7 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-        <div className="backgroundClients p-5 lg:flex lg:flex-wrap ">
+        <div className="backgroundClients p-10 lg:flex lg:flex-wrap ">
           <h1 className="blue text-2xl font-bold textName mt-10 lg:ml-10">
             Klientom ponúkame
           </h1>
@@ -119,9 +119,9 @@ class Landing extends Component {
         </div>
 
         <div className="backgroundDoc lg:mt-20">
-          <div className="lg:flex lg:flex-wrap reverseR">
-            <div className="documentsContainer lg:w-1/2 lg:self-center lg:justify-center">
-              <div className="p-5">
+          <div className="lg:flex lg:flex-no-wrap reverseR mb:p-5 lg:p-0">
+            <div className="documentsContainer lg:w-2/12 lg:p-10">
+              <div className="">
                 <h1 id="Documents" className="blue text-2xl font-bold textName">
                   Dokumenty
                 </h1>
@@ -148,13 +148,13 @@ class Landing extends Component {
               </div>
             </div>
 
-            <div className="sm:p-5 lg:w-1/2 lg:self-center lg:justify-center pic">
+            <div className="sm:p-5 lg:w-10/12 lg:self-center lg:justify-center pic">
               <img src={ilustracia3} alt="Logo" />
             </div>
           </div>
 
           <div className="backgroundZmluvy reverse lg:flex lg:flex-wrap ">
-            <div className="p-5 lg:w-1/2 lg:self-center lg:justify-center lg:p-20">
+            <div className="p-5 lg:w-1/2 lg:self-center lg:justify-center lg:p-32">
               <div className="">
                 <h1 id="Projects" className="blue text-2xl font-bold textName">
                   Projekty
@@ -236,9 +236,10 @@ class Landing extends Component {
           <h1 id="Connections" className="blue text-2xl font-bold textName">
             Kontakty
           </h1>
-          <div className="reverse mt-5">
+          <div className="reverse mb:mt-5 lg:mt-0">
             <div className="containerMap mt-5 -mb-10">
               <iframe
+                title="myFrame"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41862.848843363274!2d21.03512777903794!3d49.02146525164568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ef4676ff67f69%3A0x7083d0343f3d85cf!2s082%2033%20Chminianska%20Nov%C3%A1%20Ves!5e0!3m2!1ssk!2ssk!4v1597163536179!5m2!1ssk!2ssk"
                 className="responsive-iframe"
                 frameborder="0"

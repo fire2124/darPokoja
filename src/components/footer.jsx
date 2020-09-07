@@ -1,13 +1,10 @@
 import React from "react";
-import { Form } from "react-final-form";
-import { Field } from "react-final-form";
 import ilustracia from "../images/DarPokoja/Dar pokoja n.o. Služby pre seniorov.png";
 import ilustracia2 from "../images/DarPokoja/svk-bocna verzia 1.png";
 
-
 const Footer = () => {
   return (
-    <div className="backgroundFooter textFooter blue flex  ">
+    <div className="backgroundFooter textFooter blue flex  allWidth">
       <div className="p-5 reverse mb:w-1/2 lg:mx-auto lg:w-full lg:items-start">
         <div className="mb:mb-10 lg:mb-0 lg:mt-4 lg:ml-2">
           <img

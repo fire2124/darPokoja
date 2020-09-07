@@ -17,7 +17,7 @@ const Nav = styled.nav`
 
 const Navbar2 = () => {
   return (
-    <Nav className="xl:my-4 ">
+    <Nav className="xl:my-4 allWidth">
       <a href="/" >
         <img
           src={ilustracia}

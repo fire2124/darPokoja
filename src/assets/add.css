@@ -126,9 +126,10 @@
   background-image: url("../images/DarPokoja/backgrounds/web1.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: auto;
   z-index: 1;
 }
+
 .backgroundMiddle {
   height: 100%;
   background-image: url("../images/DarPokoja/backgrounds/web2.png");
@@ -245,8 +246,16 @@
   }
 }
 
-@media (min-width: 780px) {
- 
+@media (min-width: 760px) {
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 50%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -349,7 +358,7 @@
   .documentsContainer {
     background-color: #ffffff;
     position: absolute;
-    margin-top: 8%;
+    margin-top: 14%;
     padding: 4%;
     padding-left: 8%;
     padding-right: 5%;
@@ -382,6 +391,22 @@
 }
 
 @media (min-width: 1280px) {
+  .containerMap {
+    padding-top: 2% /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625)*/;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    height: 400px;
+  }
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+  }
   .text-bold {
     font-style: normal;
     font-weight: bold;
@@ -416,34 +441,40 @@
     padding-top: 20.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
   /* Then style the iframe to fit in the container div with full height and width */
-  .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    height: 100%;
-  }
+ 
   .aboutUsContainer {
     background-color: #ffffff;
     position: absolute;
-    left: 900px;
-    height: 350px;
+    left: 40%;
+    height: auto;
+
+    width: 60%;
     border-radius: 15px 0px 0px 15px;
     z-index: 10;
+    margin-bottom: 20%;
   }
   .documentsContainer {
     background-color: #ffffff;
     position: absolute;
     /* left: 1900px; */
-    height: 400px;
-    width: 1000px;
+    height: auto;
+
+    width: 60%;
     border-radius: 0px 15px 15px 0px;
     z-index: 10;
   }
+  .allWidth{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 1920px) {
+  .allWidth{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   /*Mapa*/
   .container {
     position: static;
@@ -453,25 +484,33 @@
     /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
   /* Then style the iframe to fit in the container div with full height and width */
-  .responsive-iframe {
-    position: static;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 90%;
-    height: 400px;
+  .aboutUsContainer {
+    background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    height: auto;
+    width: 40%;
+    border-radius: 15px 0px 0px 15px;
+    z-index: 10;
   }
   .documentsContainer {
+    left: 10%;
     background-color: #ffffff;
     position: absolute;
     /* left: 1900px; */
-    height: 400px;
-    width: 1000px;
+    height: auto;
+    width: 45%;
     border-radius: 0px 15px 15px 0px;
     z-index: 10;
   }
 
+  .pic {
+    margin-top: 12%;
+    left: 50%;
+    width: 70%;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: 0%;
+  }
   .react-multiple-carousel__arrow--left {
     margin-left: 8rem;
     z-index: 1;

@@ -36,7 +36,7 @@ const responsive = {
 const CarouselForm = () => {
   return (
     <Carousel
-      className=""
+      className="justify-center"
       swipeable={false}
       responsive={responsive}
       centerMode={false}
@@ -47,7 +47,6 @@ const CarouselForm = () => {
       containerClass="container"
       draggable
       focusOnSelect={true}
-      infinite
       minimumTouchDrag={80}
       slidesToSlide={1}
     >
