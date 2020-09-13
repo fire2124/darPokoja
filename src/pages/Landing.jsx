@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import ilustracia from "../images/DarPokoja/ilustracia_velka.png";
 import ilustracia2 from "../images/DarPokoja/DSCF1331z 1.png";
-import ilustracia3 from "../images/DarPokoja/DSCF1384z.png";
+import ilustracia3 from "../images/export/IMG_8306.jpg";
 import psk from "../images/DarPokoja/svk-bocna verzia 1.png";
-import CarouselForm from "../components/Carousel/CarouselForm"
-
+import CarouselForm from "../components/Carousel/CarouselForm";
 
 class Landing extends Component {
   render() {
@@ -30,13 +29,15 @@ class Landing extends Component {
               alt="Logo"
               className="mx-auto md:w-auto"
               width="auto"
+              loading="lazy"
             />
           </div>
         </div>
 
         <div className="lg:flex lg:flex-no-wrap backgroundUPSecond">
           <div className="lg:w-10/12 ">
-            <img src={ilustracia2} alt="Logo" className="mx-auto md:mx-auto" />
+            <img src={ilustracia2} alt="Logo" loading="lazy" className="mx-auto md:mx-auto"  width="auto"
+            />
           </div>
           <div className="w-full mb:p-5 lg:p-0 lg:w-2/12 ">
             <div className="aboutUsContainer lg:p-10">
@@ -109,11 +110,14 @@ class Landing extends Component {
 
         <div className="">
           <div className="p-5">
-            <div id="Galery" className="blue text-2xl font-bold textName lg:text-center lg:p-5 lg:mt-5">
+            <div
+              id="Galery"
+              className="blue text-2xl font-bold textName lg:text-center lg:p-5 lg:mt-5"
+            >
               Galéria
             </div>
             <div className="mt-5 lg:mt-6">
-              <CarouselForm/>
+              <CarouselForm />
             </div>
           </div>
         </div>
@@ -149,7 +153,7 @@ class Landing extends Component {
             </div>
 
             <div className="sm:p-5 lg:w-10/12 lg:self-center lg:justify-center pic">
-              <img src={ilustracia3} alt="Logo" />
+              <img src={ilustracia3} loading="lazy" alt="Logo" width="auto" className="mx-auto md:mx-auto"/>
             </div>
           </div>
 
@@ -251,9 +255,8 @@ class Landing extends Component {
                 Dar pokoja n.o., Domov pre seniorov
               </p>
               <p className="xl:text-lg text-black text-left">
-                Chminianska Nová Ves 339,
-                <br/>
-                082 33
+                Chminianska Nová Ves 339, 082 33
+                <br />N 49.00277° E 21.08097°
               </p>
               <p className="mt-5">
                 <div className="font-semibold">Telefón:</div>
