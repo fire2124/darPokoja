@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import ilustracia from "../images/DarPokoja/ilustracia_velka.png";
 import ilustracia2 from "../images/DarPokoja/DSCF1331z 1.png";
-import ilustracia3 from "../images/export/IMG_8306.jpg";
+//import ilustracia2 from "../images/export/vonku_0.jpg";
+
+import ilustracia3 from "../images/export/opatrovatelky_1.jpg";
 import psk from "../images/DarPokoja/svk-bocna verzia 1.png";
 import CarouselForm from "../components/Carousel/CarouselForm";
 
@@ -152,7 +154,7 @@ class Landing extends Component {
               </div>
             </div>
 
-            <div className="sm:p-5 lg:w-10/12 lg:self-center lg:justify-center pic">
+            <div className="sm:p-5 lg:w-10/12 lg:self-center lg:justify-center pic p">
               <img src={ilustracia3} loading="lazy" alt="Logo" width="auto" className="mx-auto md:mx-auto"/>
             </div>
           </div>

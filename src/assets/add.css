@@ -86,6 +86,9 @@
 .picture-Carusel {
   border-radius: 25px 25px 25px 25px;
 }
+.p {
+  border-radius: 5px 5px 5px 5px;
+}
 
 .react-multiple-carousel__arrow::before {
   color: #019adf;
@@ -311,7 +314,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 20.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 0%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
 
   .containerMap {
@@ -438,7 +441,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 20.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 0%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
   /* Then style the iframe to fit in the container div with full height and width */
  

@@ -19,7 +19,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="m-2">
-            <a href="www.darpokoja.sk/GDPR" className="hover:underline">
+            <a href="http://darpokoja.sk/public/GDPR.pdf" className="hover:underline">
               {" "}
               Ochrana údajov
             </a>

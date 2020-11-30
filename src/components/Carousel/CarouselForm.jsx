@@ -1,28 +1,31 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import ilustracia from "../../images/export/GOPR1199.jpg";
-import ilustracia2 from "../../images/export/GOPR1201.jpg";
-import ilustracia3 from "../../images/export/GOPR1254.jpg";
-import ilustracia4 from "../../images/export/GOPR1268.jpg";
-import ilustracia5 from "../../images/export/GOPR1276.jpg";
-import ilustracia6 from "../../images/export/GOPR1285.jpg";
-import ilustracia7 from "../../images/export/IMG_8293.jpg";
-import ilustracia8 from "../../images/export/IMG_8299.jpg";
-import ilustracia9 from "../../images/export/IMG_8306.jpg";
-import ilustracia10 from "../../images/export/IMG_8312.jpg";
-import ilustracia11 from "../../images/export/IMG_8313.jpg";
-import ilustracia12 from "../../images/export/IMG_8317.jpg";
-import ilustracia13 from "../../images/export/IMG_8319.jpg";
-import ilustracia14 from "../../images/export/IMG_8320.jpg";
-import ilustracia15 from "../../images/export/IMG_8325.jpg";
-import ilustracia16 from "../../images/export/IMG_8331.jpg";
-import ilustracia17 from "../../images/export/IMG_8332.jpg";
-import ilustracia18 from "../../images/export/IMG_8333.jpg";
-import ilustracia19 from "../../images/export/IMG_8341.jpg";
-import ilustracia20 from "../../images/export/IMG_8345.jpg";
-import ilustracia22 from "../../images/export/IMG_8357.jpg";
-import ilustracia23 from "../../images/export/IMG_8381.jpg";
-import ilustracia24 from "../../images/export/IMG_8383.jpg";
+import ilustracia from "../../images/export/altanok_1.jpg";
+import ilustracia2 from "../../images/export/dnu_1.jpg";
+import ilustracia3 from "../../images/export/dnu_2.jpg";
+import ilustracia4 from "../../images/export/jedalen.jpg";
+import ilustracia5 from "../../images/export/jedalen_2.jpg";
+import ilustracia6 from "../../images/export/chodba.jpg";
+import ilustracia7 from "../../images/export/kuchyna_1.jpg";
+import ilustracia8 from "../../images/export/opatrovatelky.jpg";
+import ilustracia9 from "../../images/export/opatrovatelky_1.jpg";
+import ilustracia10 from "../../images/export/opatrovatelky_2.jpg";
+import ilustracia11 from "../../images/export/pracovna.jpg";
+import ilustracia12 from "../../images/export/schody.jpg";
+import ilustracia13 from "../../images/export/schody_2.jpg";
+import ilustracia14 from "../../images/export/spolocenska_1.jpg";
+import ilustracia15 from "../../images/export/spolocenska_2.jpg";
+import ilustracia16 from "../../images/export/spolocenska_3.jpg";
+import ilustracia17 from "../../images/export/vonku_0.jpg";
+import ilustracia18 from "../../images/export/vonku_1.jpg";
+import ilustracia19 from "../../images/export/vonku_2.jpg";
+import ilustracia20 from "../../images/export/vonku_3.jpg";
+import ilustracia21 from "../../images/export/vonku_4.jpg";
+import ilustracia22 from "../../images/export/vonku_5.jpg";
+import ilustracia23 from "../../images/export/vonku_6.jpg";
+import ilustracia24 from "../../images/export/vonku.jpg";
+import ilustracia25 from "../../images/export/wc.jpg";
+import ilustracia26 from "../../images/export/wc_2.jpg";
 
 import "react-multi-carousel/lib/styles.css";
 
@@ -45,92 +48,145 @@ const responsive = {
   },
 };
 
+const images = [
+  {
+    img: ilustracia,
+    alt: "image1",
+  },
+  {
+    img: ilustracia2,
+    alt: "image2",
+  },
+  {
+    img: ilustracia3,
+    alt: "image3",
+  },
+  {
+    img: ilustracia4,
+    alt: "image4",
+  },
+  {
+    img: ilustracia5,
+    alt: "image5",
+  },
+  {
+    img: ilustracia6,
+    alt: "image6",
+  },
+  {
+    img: ilustracia7,
+    alt: "image7",
+  },
+  {
+    img: ilustracia8,
+    alt: "image8",
+  },
+  {
+    img: ilustracia9,
+    alt: "image9",
+  },
+  {
+    img: ilustracia10,
+    alt: "image10",
+  },
+  {
+    img: ilustracia11,
+    alt: "image11",
+  },
+  {
+    img: ilustracia12,
+    alt: "image12",
+  },
+  {
+    img: ilustracia13,
+    alt: "image13",
+  },
+  {
+    img: ilustracia14,
+    alt: "image14",
+  },
+  {
+    img: ilustracia15,
+    alt: "image15",
+  },
+  {
+    img: ilustracia16,
+    alt: "image16",
+  },
+  {
+    img: ilustracia17,
+    alt: "image17",
+  },
+  {
+    img: ilustracia18,
+    alt: "image18",
+  },
+  {
+    img: ilustracia19,
+    alt: "image19",
+  },
+  {
+    img: ilustracia20,
+    alt: "image20",
+  },
+  {
+    img: ilustracia21,
+    alt: "image21",
+  },
+  {
+    img: ilustracia22,
+    alt: "image22",
+  },
+  {
+    img: ilustracia23,
+    alt: "image23",
+  },
+  {
+    img: ilustracia24,
+    alt: "image24",
+  },
+  {
+    img: ilustracia25,
+    alt: "image25",
+  },
+  {
+    img: ilustracia26,
+    alt: "image26",
+  }
+]
+
 const CarouselForm = () => {
   return (
     <Carousel
-      className="justify-center"
+      // className="justify-center"
+      // swipeable={false}
+      // responsive={responsive}
+      // centerMode={false}
+      // autoPlay
+      // autoPlaySpeed={3000}
+      // additionalTransfrom={0}
+      // arrows
+       containerClass="container"
+      // draggable
+      // focusOnSelect={true}
+      // minimumTouchDrag={80}
+      // slidesToSlide={1}
+
       swipeable={false}
+      draggable={false}
+      showDots={false}
       responsive={responsive}
-      centerMode={false}
-      autoPlay
-      autoPlaySpeed={3000}
-      additionalTransfrom={0}
-      arrows
-      containerClass="container"
-      draggable
-      focusOnSelect={true}
-      minimumTouchDrag={80}
-      slidesToSlide={1}
+      ssr={true} // means to render carousel on server-side.
+      infinite={true}
+      keyBoardControl={false}
     >
-      <div className="picture-Carusel">
-        <img src={ilustracia} alt="image1" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia2} alt="image2" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia4} alt="image3" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia3} alt="image4" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia5} alt="image5" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia6} alt="image6" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia7} alt="image7" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia8} alt="image8" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia9} alt="image9" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia10} alt="image10" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia11} alt="image11" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia12} alt="image12" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia13} alt="image13" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia14} alt="image14" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia15} alt="image15" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia16} alt="image16" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia17} alt="image17" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia18} alt="image18" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia19} alt="image19" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia20} alt="image20" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia22} alt="image22" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia23} alt="image23" loading="lazy"></img>
-      </div>
-      <div className="picture-Carusel">
-        <img src={ilustracia24} alt="image24" loading="lazy"></img>
-      </div>
+      {images.map(( item ) => {
+        return (
+          <div className="picture-Carusel">
+            <img src={item.img} alt={item.alt} loading="lazy" className="p"></img>
+          </div>
+        );
+      })}
     </Carousel>
   );
 };
