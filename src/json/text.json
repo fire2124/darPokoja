@@ -1,0 +1,50 @@
+{
+    "text_in_house": "Plynulé poskytovanie sociálnych služieb zabezpečuje obetavý a zároveň odborný personál v zložení: riaditeľ a ekonóm, odborný garant, sociálny pracovník, vedúca sociálno-zdravotníckeho úseku, opatrovateľky, zmluvný lekár zariadenia a ďalší pracovníci pracujúci na dohodu.",
+    "about_us": "Poskytujeme nepretržitú, odbornú starostlivosť o seniorov, zameranú na ľudský prístup a dôstojnosť klienta. Ponúkame celoročné ubytovanie v jednoposteľových izbách s dôrazom na súkromie klienta.",
+    "what_we_offer": "Ubytovanie prijímateľov sociálnej služby je zabezpečené v jednoposteľových izbách situovaných v samostatných bunkách. WC a sprchovací kút má každá obytná bunka samostatné. Stravovanie 5x denne, zahŕňa chutnú, výživnú a racionálnu stravu. Upratovanie, pranie a žehlenie zabezpečujeme v priestoroch zariadenia.",
+    "what_we_offer_ul": [
+        {
+            "label": "ubytovanie v jednoposteľových izbách",
+            "key": "1"
+        },
+        {
+            "label": "nepretržitý dohľad a opateru",
+            "key": "2"
+        },
+        {
+            "label": "ošetrovateľskú starostlivosť",
+            "key": "3"
+        },
+        {
+            "label": "základné rehabilitačné cvičenia",
+            "key": "4"
+        },
+        {
+            "label": "sociálnu rehabilitáciu a poradenstvo",
+            "key": "5"
+        },
+        {
+            "label": "pracovnú terapiu a záujmovú činnosť",
+            "key": "6"
+        }
+    ],
+    "documents": "Pre umiestnenie do Domova pre seniorov v Chminianskej Novej Vsi, kontaktujte prosím: Mgr. Katarínu Kacvinskú, vedúcu zariadenia, telefón: 051 776 14 59, mob.: 0910 732 105",
+    "phone_info": [
+        {
+            "label": "Pevná linka: 051776 14 59",
+            "key": "1"
+        },
+        {
+            "label": "Riaditeľka n.o.: Mgr. Mariana Šatná, telefónne číslo: 0903 671 125 ",
+            "key": "2"
+        },
+        {
+            "label": "Odborný garant: Ing. Maroš Šatný, PhD., telefónne číslo: 0901 710 967",
+            "key": "3"
+        },
+        {
+            "label": "Vedúca sociálno-zdravotníckeho úseku: Mgr. Katarína Kacvinská, telefónne číslo: 0910 732 105",
+            "key": "4"
+        }
+    ]
+}

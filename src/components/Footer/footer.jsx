@@ -1,6 +1,6 @@
 import React from "react";
-import ilustracia from "../images/DarPokoja/Dar pokoja n.o. Služby pre seniorov.png";
-import ilustracia2 from "../images/DarPokoja/svk-bocna verzia 1.png";
+import ilustracia from "../../images/DarPokoja/Dar pokoja n.o. Služby pre seniorov.png";
+import ilustracia2 from "../../images/DarPokoja/svk-bocna verzia 1.png";
 
 const Footer = () => {
   return (
