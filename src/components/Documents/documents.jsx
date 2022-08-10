@@ -2,32 +2,28 @@
 import { documents } from "../../json/text.json";
 import ilustracia3 from "../../images/export/opatrovatelky_1.jpg";
 
+const hrefZiadost = "http://darpokoja.sk/public/ziadost.pdf"
+
 const Documents = () => {
     return (
-        <div className="lg:flex lg:flex-no-wrap reverseR mb:p-5 lg:p-0">
-            <div className="documentsContainer lg:w-2/12 lg:p-10">
+        <article className="lg:flex lg:flex-no-wrap reverseR mb:p-5 lg:p-0">
+            <section className="documentsContainer lg:w-2/12 lg:p-10">
                 <div className="">
-                    <h1 id="Documents" className="blue text-2xl font-bold textName">
+                    <h2 id="Documents" className="blue text-2xl font-bold textName">
                         Dokumenty
-                    </h1>
+                    </h2>
                     <p className="mt-5 textArticle">{documents}</p>
-                    {/* <p className="mt-5 textArticle">
-            Podmienkou prijatia do Domova pre seniorov je právoplatné
-            Rozhodnutie o odkázanosti klienta na sociálnu službu v
-            Zariadení pre seniorov a Potvrdenie o bezinfekčnosti klienta
-            od ošetrujúceho lekára.
-          </p> */}
                     <div className="underline mt-5 textArticle blue">
                         <a
-                            href="http://darpokoja.sk/public/ziadost.pdf"
+                            href={hrefZiadost}
                             title="Žiadosť o posúdenie odkázanosti na sociálnu službu"
                         >
                             Žiadosť o posúdenie odkázanosti na sociálnu službu
                         </a>
                     </div>
                 </div>
-            </div>
-            <div className="sm:p-5 lg:w-10/12 lg:self-center lg:justify-center pic p">
+            </section>
+            <section className="sm:p-5 lg:w-10/12 lg:self-center lg:justify-center pic p">
                 <img
                     src={ilustracia3}
                     loading="lazy"
@@ -35,8 +31,8 @@ const Documents = () => {
                     width="auto"
                     className="mx-auto md:mx-auto"
                 />
-            </div>
-        </div>
+            </section>
+        </article>
 
 
     )

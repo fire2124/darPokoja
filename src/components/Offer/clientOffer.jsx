@@ -2,11 +2,11 @@ import { what_we_offer, what_we_offer_ul } from "../../json/text.json";
 
 const ClientOffer = () => {
     return (
-        <div className="backgroundClients p-10 lg:flex lg:flex-wrap ">
-            <h1 className="blue text-2xl font-bold textName mt-10 lg:ml-10">
+        <article className="backgroundClients p-10 lg:flex lg:flex-wrap ">
+            <h2 className="blue text-2xl font-bold textName mt-10 lg:ml-10">
                 Klientom ponúkame
-            </h1>
-            <div className="backgroundClients  lg:flex lg:flex-wrap reverseR">
+            </h2>
+            <section className="backgroundClients  lg:flex lg:flex-wrap reverseR">
                 <div className=" lg:w-1/2 lg:self-center lg:justify-center">
                     <div className="w-full lg:p-10 ">
                         <div className="p-2 lg:p-0">
@@ -25,8 +25,8 @@ const ClientOffer = () => {
                 <div className=" lg:w-1/2 lg:self-center lg:justify-center">
                     <p className="textArticle mb-5 lg:p-10">{what_we_offer}</p>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
     )
 }
 

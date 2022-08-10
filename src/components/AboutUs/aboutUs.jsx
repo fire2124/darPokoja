@@ -3,8 +3,8 @@ import { about_us } from "../../json/text.json";
 
 const AboutUs = () => {
     return (
-        <div className="lg:flex lg:flex-no-wrap backgroundUPSecond">
-            <div className="lg:w-10/12 ">
+        <article className="lg:flex lg:flex-no-wrap backgroundUPSecond">
+            <section className="lg:w-10/12 ">
                 <img
                     src={ilustracia2}
                     alt="Logo"
@@ -12,8 +12,8 @@ const AboutUs = () => {
                     className="mx-auto md:mx-auto"
                     width="auto"
                 />
-            </div>
-            <div className="w-full mb:p-5 lg:p-0 lg:w-2/12 ">
+            </section>
+            <section className="w-full mb:p-5 lg:p-0 lg:w-2/12 ">
                 <div className="aboutUsContainer lg:p-10">
                     <h1
                         id="AboutUsSection"
@@ -23,8 +23,8 @@ const AboutUs = () => {
                     </h1>
                     <p className="mt-5 textArticle lg:mr-16 ">{about_us}</p>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
     )
 }
 
