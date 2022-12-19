@@ -13,7 +13,7 @@ const AboutUs = () => {
                     width="auto"
                 />
             </section>
-            <section className="w-full mb:p-5 lg:p-0 lg:w-2/12 ">
+            <section className="w-1/2 mb:p-5 lg:p-0 lg:w-2/12 ">
                 <div className="aboutUsContainer lg:p-10">
                     <h1
                         id="AboutUsSection"

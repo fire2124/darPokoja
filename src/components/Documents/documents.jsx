@@ -7,7 +7,7 @@ const hrefZiadost = "http://darpokoja.sk/public/ziadost.pdf"
 const Documents = () => {
     return (
         <article className="lg:flex lg:flex-no-wrap reverseR mb:p-5 lg:p-0">
-            <section className="documentsContainer lg:w-2/12 lg:p-10">
+            <section className="documentsContainer lg:w-2/12 lg:p-8">
                 <div className="">
                     <h2 id="Documents" className="blue text-2xl font-bold textName">
                         Dokumenty

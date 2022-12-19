@@ -367,7 +367,7 @@
     padding-right: 5%;
 
     left: 0%;
-    width: 60%;
+    width: 45%;
     border-radius: 0px 15px 15px 0px;
     z-index: 10;
   }
@@ -448,21 +448,22 @@
   .aboutUsContainer {
     background-color: #ffffff;
     position: absolute;
-    left: 40%;
+    left: 50%;
     height: auto;
 
-    width: 60%;
+    width: 50%;
     border-radius: 15px 0px 0px 15px;
     z-index: 10;
     margin-bottom: 20%;
   }
   .documentsContainer {
+    left: 6% !important;
     background-color: #ffffff;
     position: absolute;
     /* left: 1900px; */
     height: auto;
 
-    width: 60%;
+    width: 45%;
     border-radius: 0px 15px 15px 0px;
     z-index: 10;
   }
